@@ -1,2 +1,1 @@
 # pair-project
-shop
