@@ -29,7 +29,7 @@ var arrman = [article1,article2,article3,article4,article5]
 
 
 $("#button".on("click",function(){
-    $('search').append()
+    $('search').append('')
     
 console.log(`${arrman[i]}`)
 }))
@@ -75,6 +75,30 @@ $('.showw ').append(`
         
 } 
     })
+    }
+
+    var filtered=function(){
+        var data = $('.Search').val()
+        var a =  filter(array1,function(elem){
+    return elem.type === data
+        })
+        console.log(a);
+        show(a)
+    
+    
+    } 
+    
+    $('#searchg').click(function(){
+        filtered()
+    })
+    
+    
+    
+    function buy(type, index) {
+        var article = array1[index];
+        array1.splice(index, 1);
+        alert("your choice added in your box ")
+        show(array1);
     }
     
     
